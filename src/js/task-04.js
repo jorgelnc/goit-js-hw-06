@@ -1,9 +1,5 @@
 
-
-const mainID = document.getElementById("counter");
-
 const buttons = document.querySelectorAll("button");
-
 
 const valueSpan = document.querySelector("#value");
 valueSpan.textContent = "0";
@@ -19,5 +15,3 @@ for (let button of buttons) {
         valueSpan.textContent = counterValue;
     })
 }
-
-
