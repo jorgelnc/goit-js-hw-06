@@ -1,5 +1,5 @@
 // Escriba un script que cambie el color de fondo del elemento <body>
-//  mediante el estilo inline cuando se hace clic en button.change - color y emite el valor del color en span.color.
+//  mediante el estilo inline cuando se hace clic en button.change-color y emite el valor del color en span.color.
 
 // <div class="widget">
 //   <p>Background color: <span class="color">-</span></p>
@@ -20,3 +20,10 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+const buttonChangeColor = document.querySelector(".change-color");
+
+buttonChangeColor.addEventListener("click", (e) => {
+  const spanColor = document.querySelector(".color");
+  spanColor.style.backgroundColor = getRandomHexColor();
+});
