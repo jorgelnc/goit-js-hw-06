@@ -22,7 +22,6 @@ const galleryHTML = images
       <img  src="${image.url}" alt="${image.alt}" width=250px>
     </li>
   `;
-    console.log(img)
     return img;
   })
   .join('');
