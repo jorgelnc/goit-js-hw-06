@@ -22,8 +22,11 @@ function getRandomHexColor() {
 }
 
 const buttonChangeColor = document.querySelector(".change-color");
+const body = document.querySelector("body");
 
 buttonChangeColor.addEventListener("click", (e) => {
   const spanColor = document.querySelector(".color");
-  spanColor.style.backgroundColor = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  spanColor.textContent = randomColor;
+  body.style.backgroundColor = randomColor;
 });

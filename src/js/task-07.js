@@ -8,6 +8,8 @@
 const inputControlSize = document.querySelector("#font-size-control");
 const refText = document.querySelector("#text");
 
+refText.style.fontSize = `${inputControlSize.value}px`;
+
 inputControlSize.addEventListener("input", (e) => {
     let valueDefault = e.target.value;
     refText.style.fontSize = `${valueDefault}px`;

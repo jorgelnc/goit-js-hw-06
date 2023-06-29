@@ -9,7 +9,7 @@ const spanName = document.getElementById("name-output");
 
 inputName.addEventListener("input", (e) => {
     let newValue = "Anonymous";
-    if(e.target.value){
+    if(e.target.value.trim()){
         newValue = e.target.value;
 }
     spanName.textContent = newValue;
